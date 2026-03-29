@@ -5,8 +5,5 @@ for i in range(0,len(list)):
             if list[j]!=0:
                list[i],list[j]=list[j],list[i]
                j+=1
-        i+=1           
-
-            
-    
+        i+=1              
 print(list)          
