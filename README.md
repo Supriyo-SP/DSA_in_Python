@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/status-Active-2EA043)](#)
-[![Last%20Updated](https://img.shields.io/badge/last%20updated-2026--05--05-0B3D91)](#)
+[![Last%20Updated](https://img.shields.io/badge/last%20updated-2026--05--08-0B3D91)](#)
 
 A curated collection of data structures and algorithms solved in Python, organized by topic for quick practice and revision.
 
@@ -16,6 +16,7 @@ A curated collection of data structures and algorithms solved in Python, organiz
 
 - Array/ — core array problems (searching, rotation, subarray, two-sum, three-sum)
 - Frequency_map/ — hashing and frequency-based patterns
+- Greedy Algorithm/ — greedy strategies and scheduling-style problems
 - Leetcode/ — standalone LeetCode solutions
 - Linked List/ — list operations, cycles, middle/odd-even, deletion
 - Recursion/ — recursion patterns and classic problems
@@ -35,6 +36,7 @@ A curated collection of data structures and algorithms solved in Python, organiz
 - [x] Linked Lists: middle, cycle, deletion, odd-even
 - [x] Strings: isomorphic, longest substring, reverse words
 - [x] Stack: valid parentheses
+- [x] Greedy: assign cookies
 - [ ] Sorting: merge sort, quick sort, heap sort
 - [ ] Trees: traversals, BST operations
 - [ ] Graphs: BFS, DFS, shortest paths
