@@ -2,7 +2,7 @@
 
 [![Language](https://img.shields.io/badge/language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/status-Active-2EA043)](#)
-[![Last%20Updated](https://img.shields.io/badge/last%20updated-2026--05--11-0B3D91)](#)
+[![Last%20Updated](https://img.shields.io/badge/last%20updated-2026--05--17-0B3D91)](#)
 
 A curated collection of data structures and algorithms solved in Python, organized by topic for quick practice and revision.
 
@@ -11,6 +11,7 @@ A curated collection of data structures and algorithms solved in Python, organiz
 - Clean, single-file solutions for common interview problems
 - Topic-first structure for focused study
 - Growing set of classic array, recursion, and linked list exercises
+- Linked list scripts include small runnable examples
 
 ## Folder Guide
 

@@ -1,8 +1,16 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+def build_list(values):
+    dummy = ListNode(0)
+    current = dummy
+    for value in values:
+        current.next = ListNode(value)
+        current = current.next
+    return dummy.next
 
 class Solution(object):
     def hasCycle(self, head):
@@ -19,4 +27,10 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
+
+
+if __name__ == "__main__":
+    head = build_list([3, 2, 0, -4])
+    head.next.next.next.next = head.next
+    print(Solution().hasCycle(head))
         

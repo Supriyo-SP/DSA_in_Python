@@ -1,8 +1,25 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+def build_list(values):
+    dummy = ListNode(0)
+    current = dummy
+    for value in values:
+        current.next = ListNode(value)
+        current = current.next
+    return dummy.next
+
+
+def list_to_pylist(head):
+    values = []
+    current = head
+    while current is not None:
+        values.append(current.val)
+        current = current.next
+    return values
 class Solution(object):
     def oddEvenList(self, head):
         if head is None or head.next is None:
@@ -22,4 +39,10 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
+
+
+if __name__ == "__main__":
+    head = build_list([1, 2, 3, 4, 5])
+    result = Solution().oddEvenList(head)
+    print(list_to_pylist(result))
         
