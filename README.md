@@ -2,7 +2,6 @@
 
 [![Language](https://img.shields.io/badge/language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/status-Active-2EA043)](#)
-[![Last%20Updated](https://img.shields.io/badge/last%20updated-2026--05--17-0B3D91)](#)
 [![Focus](https://img.shields.io/badge/focus-DSA-FF7A00)](#)
 [![Practice](https://img.shields.io/badge/practice-daily-7C3AED)](#)
 
@@ -14,7 +13,7 @@ A curated collection of data structures and algorithms solved in Python, organiz
 
 - Clean, single-file solutions for common interview problems
 - Topic-first structure for focused study
-- Growing set of classic array, recursion, and linked list exercises
+- Growing set of classic array, recursion, linked list, and sliding window exercises
 - Linked list scripts include small runnable examples
 
 ## Folder Guide
@@ -26,7 +25,9 @@ A curated collection of data structures and algorithms solved in Python, organiz
 | Greedy Algorithm/ | greedy strategies and scheduling-style problems |
 | Leetcode/ | standalone LeetCode solutions |
 | Linked List/ | list operations, cycles, middle/odd-even, deletion |
+| Queue/ | queue problems (in progress) |
 | Recursion/ | recursion patterns and classic problems |
+| Sliding Window/ | window-based counting and max/min patterns |
 | Stack/ | stack-based problems |
 | strings/ | string algorithms and sliding window problems |
 
@@ -49,7 +50,8 @@ python "Array/Two Sum problem.py"
 - [x] Recursion: basics, Fibonacci, palindrome
 - [x] Linked Lists: middle, cycle, deletion, odd-even
 - [x] Strings: isomorphic, longest substring, reverse words
-- [x] Stack: valid parentheses
+- [x] Stack: valid parentheses, min stack, queue using stacks
+- [x] Sliding Window: max consecutive ones patterns
 - [x] Greedy: assign cookies
 - [x] LeetCode (misc): number theory, duplicates, subsets
 - [ ] Trees: traversals, BST operations
