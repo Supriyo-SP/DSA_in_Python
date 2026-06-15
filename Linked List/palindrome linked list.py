@@ -1,3 +1,6 @@
+"""Check whether a linked list reads the same forward and backward."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -29,5 +32,8 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([1, 2, 2, 1])
+    print(Solution().isPalindrome(head))
+
+    head = build_list([1, 2, 3])
     print(Solution().isPalindrome(head))
         
