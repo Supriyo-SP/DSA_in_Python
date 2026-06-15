@@ -1,3 +1,6 @@
+"""Sort the values in a linked list in ascending order."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -47,6 +50,10 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([4, 2, 1, 3])
+    result = Solution().sortList(head)
+    print(list_to_pylist(result))
+
+    head = build_list([5, 1, 4, 2, 8])
     result = Solution().sortList(head)
     print(list_to_pylist(result))
         
