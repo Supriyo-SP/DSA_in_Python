@@ -1,3 +1,6 @@
+"""Return the middle node of a linked list."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -30,6 +33,10 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([1, 2, 3, 4, 5])
+    middle = Solution().middleNode(head)
+    print(middle.val)
+
+    head = build_list([1, 2, 3, 4, 5, 6])
     middle = Solution().middleNode(head)
     print(middle.val)
         
