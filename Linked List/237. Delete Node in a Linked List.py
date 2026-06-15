@@ -1,3 +1,6 @@
+"""Delete a node from a linked list when only that node is given."""
+
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -37,6 +40,11 @@ class Solution(object):
 if __name__ == "__main__":
     head = build_list([4, 5, 1, 9])
     node_to_delete = head.next
+    Solution().deleteNode(node_to_delete)
+    print(list_to_pylist(head))
+
+    head = build_list([1, 2, 3, 4])
+    node_to_delete = head.next.next
     Solution().deleteNode(node_to_delete)
     print(list_to_pylist(head))
         
