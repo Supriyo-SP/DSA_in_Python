@@ -1,3 +1,6 @@
+"""Rearrange nodes so odd-indexed nodes come before even-indexed ones."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -43,6 +46,10 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([1, 2, 3, 4, 5])
+    result = Solution().oddEvenList(head)
+    print(list_to_pylist(result))
+
+    head = build_list([2, 1, 3, 5, 6, 4, 7])
     result = Solution().oddEvenList(head)
     print(list_to_pylist(result))
         
