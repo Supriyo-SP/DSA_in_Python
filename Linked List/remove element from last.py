@@ -1,3 +1,6 @@
+"""Remove the n-th node from the end of a linked list."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -58,6 +61,10 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([1, 2, 3, 4, 5])
+    result = Solution().removeNthFromEnd(head, 2)
+    print(list_to_pylist(result))
+
+    head = build_list([1, 2])
     result = Solution().removeNthFromEnd(head, 2)
     print(list_to_pylist(result))
 
