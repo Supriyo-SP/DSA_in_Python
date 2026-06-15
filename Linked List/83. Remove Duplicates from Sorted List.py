@@ -1,3 +1,6 @@
+"""Remove duplicate values from a sorted linked list."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -42,5 +45,9 @@ class Solution(object):
 
 if __name__ == "__main__":
     head = build_list([1, 1, 2, 3, 3])
+    result = Solution().deleteDuplicates(head)
+    print(list_to_pylist(result))
+
+    head = build_list([1, 1, 1])
     result = Solution().deleteDuplicates(head)
     print(list_to_pylist(result))
