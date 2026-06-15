@@ -1,3 +1,6 @@
+"""Remove all nodes whose value matches the target value."""
+
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
@@ -38,6 +41,11 @@ class Solution(object):
 if __name__ == "__main__":
     head = build_list([1, 2, 6, 3, 4, 5, 6])
     val = 6
+    result = Solution().removeElements(head, val)
+    print(list_to_pylist(result))
+
+    head = build_list([7, 7, 7, 8])
+    val = 7
     result = Solution().removeElements(head, val)
     print(list_to_pylist(result))
         
