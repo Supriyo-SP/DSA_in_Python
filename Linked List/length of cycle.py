@@ -1,3 +1,6 @@
+"""Return the length of a cycle in a linked list, if one exists."""
+
+
 class ListNode(object):
 	def __init__(self, val=0, next=None):
 		self.val = val
@@ -33,4 +36,7 @@ class Solution(object):
 if __name__ == "__main__":
 	head = build_list([1, 2, 3, 4, 5])
 	head.next.next.next.next.next = head.next.next
+	print(Solution().lengthCycle(head))
+
+	head = build_list([1, 2, 3])
 	print(Solution().lengthCycle(head))
