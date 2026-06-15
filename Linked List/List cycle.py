@@ -1,3 +1,6 @@
+"""Detect whether a linked list contains a cycle."""
+
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -32,5 +35,8 @@ class Solution(object):
 if __name__ == "__main__":
     head = build_list([3, 2, 0, -4])
     head.next.next.next.next = head.next
+    print(Solution().hasCycle(head))
+
+    head = build_list([1, 2, 3, 4])
     print(Solution().hasCycle(head))
         
