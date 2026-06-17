@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -20,6 +21,24 @@ CATEGORY_MAP = {
     "sliding window": "sliding-window",
     "stack": "stack",
     "strings": "strings",
+}
+
+LEETCODE_FILENAME = re.compile(r"^(?P<number>\d+)\.\s*(?P<title>.+?)\.py$", re.IGNORECASE)
+
+TOPIC_MAP = {
+    "array": "array",
+    "arrays": "array",
+    "binary tree": "binary tree",
+    "binary trees": "binary tree",
+    "frequency_map": "frequency map",
+    "greedy algorithm": "greedy",
+    "linked list": "linked list",
+    "queue": "queue",
+    "recursion": "recursion",
+    "sliding window": "sliding window",
+    "stack": "stack",
+    "string": "string",
+    "strings": "string",
 }
 
 
@@ -42,18 +61,67 @@ def normalize_category(path: str) -> str:
     return CATEGORY_MAP.get(normalized, "update")
 
 
-def build_message(changed_paths: list[str]) -> str:
+def normalize_topic(folder_name: str) -> str:
+    normalized = folder_name.lower().replace("_", " ").strip()
+    return TOPIC_MAP.get(normalized, normalized or "update")
+
+
+def build_leetcode_message(changed_paths: list[str], difficulty: str) -> str | None:
+    for path in changed_paths:
+        parts = Path(path).parts
+        if not parts:
+            continue
+
+        filename = parts[-1]
+        match = LEETCODE_FILENAME.match(filename)
+        if not match:
+            continue
+
+        number = match.group("number")
+        folder = parts[0] if len(parts) > 1 else "leetcode"
+        topic = normalize_topic(folder)
+        return f"leetcode : {number} topic {topic} difficulty {difficulty} solved"
+
+    return None
+
+
+def build_message(changed_paths: list[str], difficulty: str) -> str:
+    leetcode_message = build_leetcode_message(changed_paths, difficulty)
+    if leetcode_message:
+        return leetcode_message
+
     categories = [normalize_category(path) for path in changed_paths]
     category = Counter(categories).most_common(1)[0][0] if categories else "update"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     return f"{category}: auto commit {timestamp}"
 
 
+def prompt_difficulty(default: str = "medium") -> str:
+    valid_difficulties = {"easy", "medium", "hard"}
+
+    while True:
+        response = input(f"Enter difficulty [easy/medium/hard] (default: {default}): ").strip().lower()
+        if not response:
+            return default
+        if response in valid_difficulties:
+            return response
+
+        print("Please enter easy, medium, or hard.")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Stage, commit, and push changes.")
     parser.add_argument("-m", "--message", help="Override the generated commit message.")
+    parser.add_argument(
+        "--difficulty",
+        choices=["easy", "medium", "hard"],
+        default=None,
+        help="Difficulty used in the auto-generated LeetCode commit message.",
+    )
     parser.add_argument("--no-push", action="store_true", help="Commit without pushing.")
     args = parser.parse_args()
+
+    difficulty = args.difficulty or prompt_difficulty()
 
     repo_root = Path(__file__).resolve().parent
 
@@ -79,7 +147,7 @@ def main() -> int:
             path = path.split(" -> ", 1)[1]
         changed_paths.append(path)
 
-    message = args.message or build_message(changed_paths)
+    message = args.message or build_message(changed_paths, difficulty)
 
     commit_result = run_git(["commit", "-m", message], repo_root)
     if commit_result.returncode != 0:
