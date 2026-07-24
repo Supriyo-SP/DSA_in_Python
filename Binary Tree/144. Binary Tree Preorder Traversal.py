@@ -10,15 +10,27 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: List[int]
         """
-        pre=[]
+        # Preorder DFS order: Root -> Left -> Right.
+        # This recursive solution is optimal for clarity.
+        # Time complexity: O(n), each node is visited once.
+        # Space complexity: O(h), recursion stack where h = tree height
+        # (worst case O(n), balanced tree O(log n)).
+        result = []
+
         def preorder(node):
-            if node ==None:
+            # Use `is None` for identity-based None checking in Python.
+            if node is None:
                 return
-            pre.append(node.val)
+            result.append(node.val)
             preorder(node.left)
             preorder(node.right)
-        preorder(root)    
-        return pre  
+
+        preorder(root)
+
+        # Alternatives for future reference:
+        # 1) Iterative preorder using an explicit stack.
+        # 2) Morris preorder traversal for O(1) extra space.
+        return result
 
 
         
