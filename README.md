@@ -2,14 +2,14 @@
 
 A current, accessible index of the Python DSA workspace. Every file in the topic folders below is listed exactly once, including helper and scaffold files, so the README stays aligned with the tree on disk.
 
-_Last updated: 2026-07-30._
+_Last updated: 2026-08-03._
 
 ## Quick Map
 
 | Folder | Files | Status | Notes |
 | --- | ---: | --- | --- |
 | Array | 26 | Cataloged | Array practice, helper files, and typo-preserved names |
-| Binary Tree | 10 | Cataloged | Traversals, views, width, and tree-shape problems |
+| Binary Tree | 11 | Cataloged | Traversals, views, width, and tree-shape problems |
 | Frequency_map | 5 | Cataloged | Frequency map practice and a palindrome rearrangement problem |
 | Greedy Algorithm | 1 | Cataloged | Greedy assignment problem |
 | Leetcode | 28 | Cataloged | Mixed numbered practice set plus two ugly-number files |
@@ -69,12 +69,13 @@ This pass keeps the filenames as they exist on disk so the catalog remains stabl
 </details>
 
 <details>
-<summary>Binary Tree (10 files)</summary>
+<summary>Binary Tree (11 files)</summary>
 
 | File | Canonical title / notes |
 | --- | --- |
 | [1.0 BinaryTree.py](Binary%20Tree/1.0%20BinaryTree.py) | Binary Tree helper / starter file |
 | [104. Maximum Depth of Binary Tree.py](Binary%20Tree/104.%20Maximum%20Depth%20of%20Binary%20Tree.py) | Maximum Depth of Binary Tree |
+| [129. Sum Root to Leaf Numbers.py](Binary%20Tree/129.%20Sum%20Root%20to%20Leaf%20Numbers.py) | Sum Root to Leaf Numbers |
 | [144. Binary Tree Preorder Traversal.py](Binary%20Tree/144.%20Binary%20Tree%20Preorder%20Traversal.py) | Binary Tree Preorder Traversal |
 | [199. Binary Tree Right Side View.py](Binary%20Tree/199.%20Binary%20Tree%20Right%20Side%20View.py) | Binary Tree Right Side View |
 | [222. Count Complete Tree Nodes.py](Binary%20Tree/222.%20Count%20Complete%20Tree%20Nodes.py) | Count Complete Tree Nodes |
