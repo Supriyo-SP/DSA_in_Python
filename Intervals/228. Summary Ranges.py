@@ -25,7 +25,5 @@ class Solution(object):
         else:
             output.append(str(start)+"->"+str(end))
         return output
-
-
-                
+    #easy level              
         
