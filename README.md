@@ -10,8 +10,7 @@ This repository is organized by topic and problem pattern. It includes LeetCode 
 | --- | ---: |
 | Topic folders | 14 |
 | Practice files | 140 |
-| Non-topic test file | [`test.py`](test.py) |
-| Empty topic folders | 1 (`Queue`) |
+
 
 ## Topic Map
 
