@@ -21,6 +21,4 @@ class Solution(object):
             self.prev = node.val
             dfs(node.right)
         dfs(root)
-        return self.min_diff        
-
-        
+        return self.min_diff
