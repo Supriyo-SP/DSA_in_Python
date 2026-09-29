@@ -1,45 +1,55 @@
-# DSA in Python
+# 🚀 Data Structures and Algorithms in Python (DSA Python)
 
-> A growing, hands-on collection of data structures and algorithm practice in Python.
+> A comprehensive, hands-on collection of **Data Structures and Algorithms (DSA)** practice in Python. Perfect for **coding interview preparation**, **LeetCode solutions**, and mastering **Python data structures**.
 
-This repository is organized by topic and problem pattern. It includes LeetCode solutions, foundational exercises, helper files, and small experiments. The overview below mirrors the folders on disk as of **22 August 2026**.
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://python.org)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Practice-orange.svg)](https://leetcode.com/)
+[![DSA](https://img.shields.io/badge/DSA-Preparation-success.svg)](#)
 
-## At A Glance
+This repository is organized by topic and problem pattern. It includes **LeetCode solutions**, foundational exercises, helper files, and small experiments. The overview below mirrors the folders on disk as of **September 2026**.
+
+## 🌟 Why This Repository? 
+- **Extensive Coverage**: From Arrays and Strings to Binary Trees, Dynamic Programming (DP), and Graphs.
+- **LeetCode Solutions in Python**: Heavily commented and optimized solutions for top LeetCode problems.
+- **Interview Ready**: Structured specifically for software engineering interviews focusing on problem-solving patterns (Sliding Window, Two Pointers, Fast & Slow Pointers).
+- **Clean Python Code**: Emphasizing Pythonic conventions and easy-to-read algorithms.
+
+## 📊 At A Glance
 
 | Metric | Current count |
 | --- | ---: |
-| Topic folders | 14 |
-| Practice files | 140 |
+| Topic folders | 15 |
+| Practice files | 156 |
 
-
-## Topic Map
+## 🗺️ Topic Map
 
 | Topic | Files | Focus |
 | --- | ---: | --- |
-| [Array](Array/) | 29 | Searching, sorting, rotation, subarrays, and two pointers |
-| [Binary Tree](Binary%20Tree/) | 17 | Traversals, views, construction, and tree properties |
+| [Array](Array/) | 30 | Searching, sorting, rotation, subarrays, and two pointers |
+| [BST](BST/) | 4 | Binary Search Tree properties, validation, and transformations |
+| [Binary Tree](Binary%20Tree/) | 20 | Traversals, views, construction, and tree properties |
 | [DP](DP/) | 4 | One-dimensional dynamic programming and string segmentation |
-| [Frequency_map](Frequency_map/) | 5 | Counting, lookup tables, and frequency-based decisions |
-| [Greedy Algorithm](Greedy%20Algorithm/) | 3 | Local choices, reachability, and resource allocation |
+| [Frequency_map](Frequency_map/) | 8 | Counting, lookup tables, and frequency-based decisions |
+| [Greedy Algorithm](Greedy%20Algorithm/) | 4 | Local choices, reachability, and resource allocation |
 | [Heap](Heap/) | 1 | Priority-based selection and top-k problems |
 | [Intervals](Intervals/) | 1 | Range compression and interval summaries |
-| [Leetcode](Leetcode/) | 29 | Mixed interview-style problems across several patterns |
+| [Leetcode](Leetcode/) | 30 | Mixed interview-style problems across several patterns |
 | [Linked List](Linked%20List/) | 15 | Pointer movement, mutation, cycles, and reordering |
 | [Queue](Queue/) | 0 | Reserved for future queue implementations and problems |
 | [Recursion](Recursion/) | 8 | Base cases, recursive state, and backtracking foundations |
 | [Sliding Window](Sliding%20Window/) | 3 | Fixed and variable-size window techniques |
-| [Stack](Stack/) | 5 | Matching, monotonic behavior, and simulation |
-| [Strings](Strings/) | 20 | Parsing, matching, transformation, and character maps |
+| [Stack](Stack/) | 6 | Matching, monotonic behavior, and simulation |
+| [Strings](Strings/) | 22 | Parsing, matching, transformation, and character maps |
 
-## Suggested Practice Route
+## 💡 Suggested Practice Route
 
 1. Start with the helper files in `Array`, `Frequency_map`, `Recursion`, and `Stack`.
 2. Build pattern fluency with `Array`, `Strings`, `Sliding Window`, `Greedy Algorithm`, and `Intervals`.
-3. Move into pointer-heavy structures in `Linked List` and `Binary Tree`.
+3. Move into pointer-heavy structures in `Linked List`, `Binary Tree`, and `BST`.
 4. Finish with `DP`, `Heap`, and the mixed `Leetcode` set.
 5. Add small edge-case examples while studying each solution.
 
-## How To Run
+## 💻 How To Run
 
 From the repository root:
 
@@ -49,12 +59,12 @@ python ".\Array\Two Sum problem.py"
 
 Because many filenames contain spaces, quote the path when running a file. Most files are standalone practice scripts; LeetCode-style files generally expose a `Solution` class or a method intended for the platform harness.
 
-## Complete Catalog
+## 📚 Complete Catalog
 
 The catalog is grouped by folder so it stays easy to scan. Filenames are preserved exactly as they appear on disk, including spaces, capitalization, and historical typos.
 
 <details>
-<summary><strong>Array</strong> · 29 files</summary>
+<summary><strong>Array</strong> · 30 files</summary>
 
 [`Array/`](Array/) contains foundational array exercises and the following problem files:
 
@@ -65,14 +75,13 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 - [`1752. Check if Array Is Sorted and Rotated.py`](Array/1752.%20Check%20if%20Array%20Is%20Sorted%20and%20Rotated.py)
 - [`2.0arr.py`](Array/2.0arr.py)
 - [`215. Kth Largest Element in an Array.py`](Array/215.%20Kth%20Largest%20Element%20in%20an%20Array.py)
+- [`274. H-Index.PY`](Array/274.%20H-Index.PY)
 - [`2nd largest elemnet.py`](Array/2nd%20largest%20elemnet.py)
 - [`3.0arr.py`](Array/3.0arr.py)
 - [`34. Find First and Last Position of Element in Sorted Array.py`](Array/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array.py)
 - [`4.0 arr.py`](Array/4.0%20arr.py)
 - [`80. Remove Duplicates from Sorted Array II.py`](Array/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.py)
 - [`Buy Sell stock.py`](Array/Buy%20Sell%20stock.py)
-- [`check sorted array.py`](Array/check%20sorted%20array.py)
-- [`consecutive secqunce.py`](Array/consecutive%20secqunce.py)
 - [`Find missing number.py`](Array/Find%20missing%20number.py)
 - [`Find the Maximum Subarray Sum.py`](Array/Find%20the%20Maximum%20Subarray%20Sum.py)
 - [`Largest element.py`](Array/Largest%20element.py)
@@ -87,18 +96,35 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 - [`Rotate array by k places.py`](Array/Rotate%20array%20by%20k%20places.py)
 - [`Three sum.py`](Array/Three%20sum.py)
 - [`Two Sum problem.py`](Array/Two%20Sum%20problem.py)
+- [`check sorted array.py`](Array/check%20sorted%20array.py)
+- [`consecutive secqunce.py`](Array/consecutive%20secqunce.py)
 
 </details>
 
 <details>
-<summary><strong>Binary Tree</strong> · 17 files</summary>
+<summary><strong>BST</strong> · 4 files</summary>
+
+[`BST/`](BST/) contains exercises for Binary Search Trees:
+
+- [`108. Convert Sorted Array to Binary Search Tree.py`](BST/108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree.py)
+- [`230. Kth Smallest Element in a BST.py`](BST/230.%20Kth%20Smallest%20Element%20in%20a%20BST.py)
+- [`530. Minimum Absolute Difference in BST.py`](BST/530.%20Minimum%20Absolute%20Difference%20in%20BST.py)
+- [`98. Validate Binary Search Tree.py`](BST/98.%20Validate%20Binary%20Search%20Tree.py)
+
+</details>
+
+<details>
+<summary><strong>Binary Tree</strong> · 20 files</summary>
 
 [`Binary Tree/`](Binary%20Tree/) covers helper code, traversals, views, construction, and tree transformations.
 
 - [`1.0 BinaryTree.py`](Binary%20Tree/1.0%20BinaryTree.py)
+- [`102. Binary Tree Level Order Traversal.py`](Binary%20Tree/102.%20Binary%20Tree%20Level%20Order%20Traversal.py)
+- [`103. Binary Tree Zigzag Level Order Traversal.py`](Binary%20Tree/103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.py)
 - [`104. Maximum Depth of Binary Tree.py`](Binary%20Tree/104.%20Maximum%20Depth%20of%20Binary%20Tree.py)
 - [`105. Construct Binary Tree from Preorder and Inorder Traversal.py`](Binary%20Tree/105.%20Construct%20Binary%20Tree%20from%20Preorder%20and%20Inorder%20Traversal.py)
 - [`106. Construct Binary Tree from Inorder and Postorder Traversal.py`](Binary%20Tree/106.%20Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal.py)
+- [`111. Minimum Depth of Binary Tree.py`](Binary%20Tree/111.%20Minimum%20Depth%20of%20Binary%20Tree.py)
 - [`114. Flatten Binary Tree to Linked List.py`](Binary%20Tree/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.py)
 - [`117. Populating Next Right Pointers in Each Node II.py`](Binary%20Tree/117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.py)
 - [`124. Binary Tree Maximum Path Sum.py`](Binary%20Tree/124.%20Binary%20Tree%20Maximum%20Path%20Sum.py)
@@ -126,19 +152,23 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 </details>
 
 <details>
-<summary><strong>Frequency_map</strong> · 5 files</summary>
+<summary><strong>Frequency_map</strong> · 8 files</summary>
 
 - [`1.0 hash.py`](Frequency_map/1.0%20hash.py)
 - [`2.0 hash.py`](Frequency_map/2.0%20hash.py)
+- [`219. Contains Duplicate II.py`](Frequency_map/219.%20Contains%20Duplicate%20II.py)
 - [`3.0 hash.py`](Frequency_map/3.0%20hash.py)
 - [`3517. Smallest Palindromic Rearrangement I.py`](Frequency_map/3517.%20Smallest%20Palindromic%20Rearrangement%20I.py)
 - [`4.0 hash.py`](Frequency_map/4.0%20hash.py)
+- [`49. Group Anagrams.py`](Frequency_map/49.%20Group%20Anagrams.py)
+- [`Q1. Count Values With Equally Spaced Occurrences.py`](Frequency_map/Q1.%20Count%20Values%20With%20Equally%20Spaced%20Occurrences.py)
 
 </details>
 
 <details>
-<summary><strong>Greedy Algorithm</strong> · 3 files</summary>
+<summary><strong>Greedy Algorithm</strong> · 4 files</summary>
 
+- [`122. Best Time to Buy and Sell Stock II.py`](Greedy%20Algorithm/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.py)
 - [`455. Assign Cookies.py`](Greedy%20Algorithm/455.%20Assign%20Cookies.py)
 - [`55. Jump Game.py`](Greedy%20Algorithm/55.%20Jump%20Game.py)
 - [`860. Lemonade Change.py`](Greedy%20Algorithm/860.%20Lemonade%20Change.py)
@@ -160,9 +190,9 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 </details>
 
 <details>
-<summary><strong>Leetcode</strong> · 29 files</summary>
+<summary><strong>Leetcode</strong> · 30 files</summary>
 
-[`Leetcode/`](Leetcode/) contains the mixed problem set, including recent additions such as 3622.
+[`Leetcode/`](Leetcode/) contains the mixed problem set.
 
 - [`1189. Maximum Number of Balloons.py`](Leetcode/1189.%20Maximum%20Number%20of%20Balloons.py)
 - [`13. Roman to Integer.py`](Leetcode/13.%20Roman%20to%20Integer.py)
@@ -184,6 +214,7 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 - [`342. Power of Four.py`](Leetcode/342.%20Power%20of%20Four.py)
 - [`3622. Check Divisibility by Digit Sum and Product.py`](Leetcode/3622.%20Check%20Divisibility%20by%20Digit%20Sum%20and%20Product.py)
 - [`3633. Earliest Finish Time for Land and Water Rides.py`](Leetcode/3633.%20Earliest%20Finish%20Time%20for%20Land%20and%20Water%20Rides.py)
+- [`3903. Smallest Stable Index I.py`](Leetcode/3903.%20Smallest%20Stable%20Index%20I.py)
 - [`397. Integer Replacement.py`](Leetcode/397.%20Integer%20Replacement.py)
 - [`4000. Largest Integer With Given Digit Sum.py`](Leetcode/4000.%20Largest%20Integer%20With%20Given%20Digit%20Sum.py)
 - [`645. Set Mismatch.py`](Leetcode/645.%20Set%20Mismatch.py)
@@ -207,13 +238,13 @@ The catalog is grouped by folder so it stays easy to scan. Filenames are preserv
 - [`237. Delete Node in a Linked List.py`](Linked%20List/237.%20Delete%20Node%20in%20a%20Linked%20List.py)
 - [`61. Rotate List.py`](Linked%20List/61.%20Rotate%20List.py)
 - [`83. Remove Duplicates from Sorted List.py`](Linked%20List/83.%20Remove%20Duplicates%20from%20Sorted%20List.py)
-- [`length of cycle.py`](Linked%20List/length%20of%20cycle.py)
 - [`List cycle.py`](Linked%20List/List%20cycle.py)
 - [`Middle of the Linked List.py`](Linked%20List/Middle%20of%20the%20Linked%20List.py)
+- [`Remove Linked List Elements.py`](Linked%20List/Remove%20Linked%20List%20Elements.py)
+- [`length of cycle.py`](Linked%20List/length%20of%20cycle.py)
 - [`odd even linked list.py`](Linked%20List/odd%20even%20linked%20list.py)
 - [`palindrome linked list.py`](Linked%20List/palindrome%20linked%20list.py)
 - [`remove element from last.py`](Linked%20List/remove%20element%20from%20last.py)
-- [`Remove Linked List Elements.py`](Linked%20List/Remove%20Linked%20List%20Elements.py)
 
 </details>
 
@@ -228,11 +259,11 @@ This folder is currently empty and reserved for queue practice.
 <summary><strong>Recursion</strong> · 8 files</summary>
 
 - [`1-N using recursion.py`](Recursion/1-N%20using%20recursion.py)
-- [`array reverse.py`](Recursion/array%20reverse.py)
 - [`Factorial recursion.py`](Recursion/Factorial%20recursion.py)
+- [`Head tail recursion.py`](Recursion/Head%20tail%20recursion.py)
+- [`array reverse.py`](Recursion/array%20reverse.py)
 - [`fibonacci series.py`](Recursion/fibonacci%20series.py)
 - [`functional recursion.py`](Recursion/functional%20recursion.py)
-- [`Head tail recursion.py`](Recursion/Head%20tail%20recursion.py)
 - [`palindrome string.py`](Recursion/palindrome%20string.py)
 - [`palindrome.py`](Recursion/palindrome.py)
 
@@ -248,23 +279,26 @@ This folder is currently empty and reserved for queue practice.
 </details>
 
 <details>
-<summary><strong>Stack</strong> · 5 files</summary>
+<summary><strong>Stack</strong> · 6 files</summary>
 
 - [`1.0 stack.py`](Stack/1.0%20stack.py)
 - [`155. Min Stack.py`](Stack/155.%20Min%20Stack.py)
 - [`20. Valid Parentheses.py`](Stack/20.%20Valid%20Parentheses.py)
 - [`232. Implement Queue using Stacks.py`](Stack/232.%20Implement%20Queue%20using%20Stacks.py)
+- [`71. Simplify Path.py`](Stack/71.%20Simplify%20Path.py)
 - [`735. Asteroid Collision.py`](Stack/735.%20Asteroid%20Collision.py)
 
 </details>
 
 <details>
-<summary><strong>Strings</strong> · 20 files</summary>
+<summary><strong>Strings</strong> · 22 files</summary>
 
 - [`125. Valid Palindrome.py`](Strings/125.%20Valid%20Palindrome.py)
 - [`14. Longest Common Prefix.py`](Strings/14.%20Longest%20Common%20Prefix.py)
+- [`1614. Maximum Nesting Depth of the Parentheses.py`](Strings/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses.py)
 - [`2000. Reverse Prefix of Word.py`](Strings/2000.%20Reverse%20Prefix%20of%20Word.py)
 - [`205. Isomorphic Strings.py`](Strings/205.%20Isomorphic%20Strings.py)
+- [`242. Valid Anagram.py`](Strings/242.%20Valid%20Anagram.py)
 - [`2553. Separate the Digits in an Array.py`](Strings/2553.%20Separate%20the%20Digits%20in%20an%20Array.py)
 - [`290. Word Pattern.py`](Strings/290.%20Word%20Pattern.py)
 - [`3612. Process String with Special Operations I.py`](Strings/3612.%20Process%20String%20with%20Special%20Operations%20I.py)
@@ -277,21 +311,21 @@ This folder is currently empty and reserved for queue practice.
 - [`599. Minimum Index Sum of Two Lists.py`](Strings/599.%20Minimum%20Index%20Sum%20of%20Two%20Lists.py)
 - [`796. Rotate String.py`](Strings/796.%20Rotate%20String.py)
 - [`Largest Odd Number in String.py`](Strings/Largest%20Odd%20Number%20in%20String.py)
-- [`leetcode-1021.py`](Strings/leetcode-1021.py)
 - [`Longest Substring Without Repeating Characters.py`](Strings/Longest%20Substring%20Without%20Repeating%20Characters.py)
 - [`Reverse Words in a String III.py`](Strings/Reverse%20Words%20in%20a%20String%20III.py)
+- [`leetcode-1021.py`](Strings/leetcode-1021.py)
 - [`reverse words.py`](Strings/reverse%20words.py)
 
 </details>
 
-## Naming Notes
+## 🏷️ Naming Notes
 
 Filenames are intentionally left unchanged so links remain stable. A few names contain abbreviations, spaces, or historical typos; the catalog reflects the filesystem rather than silently renaming study material.
 
-## Contributing
+## 🤝 Contributing
 
 Add a focused solution to the most relevant topic folder. Keep examples runnable where practical, use descriptive filenames for new work, and update the counts and catalog in this README when adding or removing a file.
 
-## License
+## 📄 License
 
 This repository is for learning and practice. If you reuse code, please provide attribution.
